@@ -1,0 +1,26 @@
+#ifndef _LCD_DEFINES_H_
+#define _LCD_DEFINES_H_
+
+//LCD PINS
+#define LCD_DATA  8  //p0.8 to p0.15 as LCD Data Pins
+#define RS        16 //p0.16 as Register Select Pin
+#define EN        17 //p0.17 as Enable pin 
+#define RW        18 //p0.18 as Read/Write pin
+
+//LCD COMMANDS
+#define CLEAR_LCD 				0X01
+#define RET_CUR_HOME 			0X02
+#define MODE_4BIT_1LINE 	0X20
+#define MODE_4BIT_2LINE 	0x28
+#define MODE_8BIT_1LINE 	0X30
+#define MODE_8BIT_2LINE 	0X38
+#define DISP_OFF 					0X08
+#define DISP_ON_CUR_OFF 	0X0C 
+#define DISP_ON_CUR_ON 		0X0E
+#define DISP_ON_CUR_BLINK 0X0F
+#define GOTO_LINE1_POS0 	0X80
+#define GOTO_LINE2_POS0 	0XC0
+#define	GOTO_CGRAM 				0X40
+#define SHIFT_CUR_RIGHT 	0X06
+
+#endif
